@@ -3,7 +3,7 @@ import Home from './Home.js';
 import About from './About.js';
 import Events from './Events.js';
 import Team from './Team.js';
-import Industry from './Industry.js'
+import Industry from './Industry.js';
 
 const Section = props => {
     const tab = props.currentTab
@@ -15,7 +15,7 @@ const Section = props => {
         return <Events />
     } else if (tab === 'Our Team') {
         return <Team />
-    } else {
+    } else if (tab === 'Industry Associates') {
         return <Industry />
     }
 };
